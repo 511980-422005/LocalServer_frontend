@@ -11,7 +11,7 @@ function send(){
         data:`${input.value}`
     };
     async function back(){
-        await axios.post(`http://192.168.212.43:3000/`,send).then().catch(err=>{
+        await axios.post(`https://cb11-2401-4900-67ad-4146-d1cf-1969-cb21-6ca8.ngrok-free.app/`,send).then().catch(err=>{
             document.getElementById("h2").innerHTML=`404`;
         });
     }
